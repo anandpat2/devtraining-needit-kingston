@@ -1,0 +1,1519 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"activities":{"36bd70f9dbf93300a45c64d748961973":"fabd70f9dbf93300a45c64d74896196d","76bdf0f9dbf93300a45c64d74896196f":"fabd70f9dbf93300a45c64d74896196d","f2bdf0f9dbf93300a45c64d748961969":"febd70f9dbf93300a45c64d74896196d"},"ends":["f2bdf0f9dbf93300a45c64d748961966"],"subflows":["02be08a4eb5221007128a5fc5206fe12"],"stages":{"febd70f9dbf93300a45c64d74896196d":{"duration":"","order":200,"stageId":"febd70f9dbf93300a45c64d74896196d","name":"Review","value":"review"},"fabd70f9dbf93300a45c64d74896196d":{"duration":"","order":100,"stageId":"fabd70f9dbf93300a45c64d74896196d","name":"Draft","value":"draft"}}}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Legacy">007c2f021b020100adca1e094f0713b4</column_renderer>
+        <condition/>
+        <condition_type/>
+        <description>Can be used as a sub-flow, this workflow will handle the submission of an article for approval.</description>
+        <expected_sequences>36bd70f9dbf93300a45c64d748961973,f2bdf0f9dbf93300a45c64d748961969,b62e78f9dbf93300a45c64d748961999,06e2c1f9dbf93300a45c64d748961997,299341f9dbf93300a45c64d748961980,f6bd70f9dbf93300a45c64d74896196e,f2bdf0f9dbf93300a45c64d748961966</expected_sequences>
+        <expected_time/>
+        <expected_time_type/>
+        <full_sequences>36bd70f9dbf93300a45c64d748961973,f2bdf0f9dbf93300a45c64d748961969,b62e78f9dbf93300a45c64d748961999,76bdf0f9dbf93300a45c64d74896196f,06e2c1f9dbf93300a45c64d748961997,299341f9dbf93300a45c64d748961980,f2bdf0f9dbf93300a45c64d748961966,f6bd70f9dbf93300a45c64d74896196e</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>HHD Approval KB</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field>workflow_state</stage_field>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">36bd70f9dbf93300a45c64d748961973</start>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:14</sys_created_on>
+        <sys_id>62bd70f9dbf93300a45c64d74896196b</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 06:04:52</sys_updated_on>
+        <table>kb_knowledge</table>
+        <timezone/>
+        <validated>false</validated>
+        <workflow display_value="HHD Approval KB">aebd70f9dbf93300a45c64d748961969</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description>Can be used as a sub-flow, this workflow will handle the submission of an article for approval.</description>
+        <name>HHD Approval KB</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>aebd70f9dbf93300a45c64d748961969</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>HHD Approval KB</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>wf_workflow_aebd70f9dbf93300a45c64d748961969</sys_update_name>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 06:04:52</sys_updated_on>
+        <table>kb_knowledge</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Draft</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:14</sys_created_on>
+        <sys_id>fabd70f9dbf93300a45c64d74896196d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:14</sys_updated_on>
+        <value>draft</value>
+        <workflow_version display_value="HHD Approval KB">62bd70f9dbf93300a45c64d74896196b</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Pending retirement</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>400</order>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:14</sys_created_on>
+        <sys_id>7ebd70f9dbf93300a45c64d74896196d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:14</sys_updated_on>
+        <value>pending_retirement</value>
+        <workflow_version display_value="HHD Approval KB">62bd70f9dbf93300a45c64d74896196b</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Published</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>300</order>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:14</sys_created_on>
+        <sys_id>72bd70f9dbf93300a45c64d74896196e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:14</sys_updated_on>
+        <value>published</value>
+        <workflow_version display_value="HHD Approval KB">62bd70f9dbf93300a45c64d74896196b</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Retired</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>500</order>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:14</sys_created_on>
+        <sys_id>3abd70f9dbf93300a45c64d74896196d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:14</sys_updated_on>
+        <value>retired</value>
+        <workflow_version display_value="HHD Approval KB">62bd70f9dbf93300a45c64d74896196b</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Review</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>200</order>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:14</sys_created_on>
+        <sys_id>febd70f9dbf93300a45c64d74896196d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:14</sys_updated_on>
+        <value>review</value>
+        <workflow_version display_value="HHD Approval KB">62bd70f9dbf93300a45c64d74896196b</workflow_version>
+    </wf_stage>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>4</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>6 Months Validity</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 06:02:36</sys_created_on>
+        <sys_id>299341f9dbf93300a45c64d748961980</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 06:03:41</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="HHD Approval KB">62bd70f9dbf93300a45c64d74896196b</workflow_version>
+        <x>694</x>
+        <y>182</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=299341f9dbf93300a45c64d748961980"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>299341f9dbf93300a45c64d748961980</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 06:02:36</sys_created_on>
+        <sys_id>b8c38131db3d3300a45c64d748961967</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 06:02:36</sys_updated_on>
+        <value>valid_to=javascript:gs.daysAgo(-183)^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>299341f9dbf93300a45c64d748961980</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 06:02:36</sys_created_on>
+        <sys_id>b8c38131db3d3300a45c64d748961967</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 06:02:36</sys_updated_on>
+        <value>valid_to=javascript:gs.daysAgo(-183)^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="6 Months Validity">299341f9dbf93300a45c64d748961980</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 06:02:36</sys_created_on>
+        <sys_id>fcc38131db3d3300a45c64d748961967</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 06:02:36</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Approval - User">35433da80a0a029a0028c639a1e51eb4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id/>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Approval Knowledge Base Management</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Review">febd70f9dbf93300a45c64d74896196d</stage>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>f2bdf0f9dbf93300a45c64d748961969</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:55</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="HHD Approval KB">62bd70f9dbf93300a45c64d74896196b</workflow_version>
+        <x>207</x>
+        <y>282</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=f2bdf0f9dbf93300a45c64d748961969"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>32bdf0f9dbf93300a45c64d74896196c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="">4485eef70a6a803f6bc4bafa9e999640</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>36bdf0f9dbf93300a45c64d74896196b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e4cc40a0a0ba96248a7098ec9cb06</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>3abdf0f9dbf93300a45c64d74896196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="">e846198f0a0004f91fba434a514ba8b8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>115</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>3abdf0f9dbf93300a45c64d74896196d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="">a76680b9c0a8006661b107d0f21fae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>3ebdf0f9dbf93300a45c64d748961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">02ca01820a0a0b261cf923fb95f5e1d0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>104</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>3ebdf0f9dbf93300a45c64d74896196c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="">e37a96e80a0004f978b47d2d6c5e0b22</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>72bdf0f9dbf93300a45c64d74896196b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">a782cde9c0a8006608f39abdd85c8395</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>1330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>76bdf0f9dbf93300a45c64d74896196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="">02c618170a0a0b26436f5c2c9f7a3901</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>2050</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>76bdf0f9dbf93300a45c64d74896196d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value>answer = new KBWorkflow().getApprovers(current);</value>
+        <variable display_value="">c35e582f0a0a0ba96248a70985207e63</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>7abdf0f9dbf93300a45c64d748961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="">a77191a4c0a800662b403f7dff5f1bbd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>7abdf0f9dbf93300a45c64d74896196c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
+        <variable display_value="">a7754e91c0a800664938d0ef6d2664d7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>1110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>7ebdf0f9dbf93300a45c64d74896196b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="">a769a182c0a8006629db7fa3fc2a863d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>b2bdf0f9dbf93300a45c64d74896196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="">a775f59ac0a8006665d72362ae687035</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>b2bdf0f9dbf93300a45c64d74896196d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="">a774138dc0a80066000be7af20961c7d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>1150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>b6bdf0f9dbf93300a45c64d74896196c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="">a76b8c6ec0a800664bb14d5d8b9cd7c4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>babdf0f9dbf93300a45c64d74896196b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value>reject</value>
+        <variable display_value="">502163410a6a803f0356332b24dc7945</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>bebdf0f9dbf93300a45c64d74896196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="">a77903a7c0a8006641af7c9b1d34444e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>1120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>f2bdf0f9dbf93300a45c64d74896196c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">a76c6257c0a8006645cff43883470e64</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>f6bdf0f9dbf93300a45c64d74896196b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="">e863e3b80a0004f911d67787e77e0f16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>103</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>fabdf0f9dbf93300a45c64d74896196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="">e37b77ac0a0004f973283ad13b341c5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>fabdf0f9dbf93300a45c64d74896196d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="">a7781cb6c0a80066147dc7a5244d5d16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>1370</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>febdf0f9dbf93300a45c64d748961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value>// Set the variable 'answer' to '', 'approved' or 'rejected' to indicate the approval status for this approval.  When called, the following information is available:&#13;
+//&#13;
+//    counts.total = total number of users that are part of this approval&#13;
+//    counts.approved = # of users that approved so far&#13;
+//    counts.rejected = # of users that rejected so far&#13;
+//    counts.requested = # of users that are pending approval&#13;
+//    counts.not_requested = # of users that are not pending approval&#13;
+//    counts.not_required = # of users that approval is not required&#13;
+//&#13;
+</value>
+        <variable display_value="">02c86d780a0a0b261e6a356bc893d348</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>febdf0f9dbf93300a45c64d74896196c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value>any</value>
+        <variable display_value="">c35e5bdd0a0a0ba96248a709f495c9ae</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>32bdf0f9dbf93300a45c64d74896196c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="">4485eef70a6a803f6bc4bafa9e999640</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>febdf0f9dbf93300a45c64d74896196c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value>any</value>
+        <variable display_value="">c35e5bdd0a0a0ba96248a709f495c9ae</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>3abdf0f9dbf93300a45c64d74896196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="">e846198f0a0004f91fba434a514ba8b8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>103</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>fabdf0f9dbf93300a45c64d74896196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="">e37b77ac0a0004f973283ad13b341c5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>104</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>3ebdf0f9dbf93300a45c64d74896196c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="">e37a96e80a0004f978b47d2d6c5e0b22</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>7abdf0f9dbf93300a45c64d748961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="">a77191a4c0a800662b403f7dff5f1bbd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>115</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>3abdf0f9dbf93300a45c64d74896196d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="">a76680b9c0a8006661b107d0f21fae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>bebdf0f9dbf93300a45c64d74896196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="">a77903a7c0a8006641af7c9b1d34444e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>36bdf0f9dbf93300a45c64d74896196b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e4cc40a0a0ba96248a7098ec9cb06</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>babdf0f9dbf93300a45c64d74896196b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value>reject</value>
+        <variable display_value="">502163410a6a803f0356332b24dc7945</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>f6bdf0f9dbf93300a45c64d74896196b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="">e863e3b80a0004f911d67787e77e0f16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>7abdf0f9dbf93300a45c64d74896196c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
+        <variable display_value="">a7754e91c0a800664938d0ef6d2664d7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>b2bdf0f9dbf93300a45c64d74896196d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="">a774138dc0a80066000be7af20961c7d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>1110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>7ebdf0f9dbf93300a45c64d74896196b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="">a769a182c0a8006629db7fa3fc2a863d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>1120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>f2bdf0f9dbf93300a45c64d74896196c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">a76c6257c0a8006645cff43883470e64</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>1150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>b6bdf0f9dbf93300a45c64d74896196c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="">a76b8c6ec0a800664bb14d5d8b9cd7c4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>fabdf0f9dbf93300a45c64d74896196d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="">a7781cb6c0a80066147dc7a5244d5d16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>b2bdf0f9dbf93300a45c64d74896196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="">a775f59ac0a8006665d72362ae687035</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>1330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>76bdf0f9dbf93300a45c64d74896196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="">02c618170a0a0b26436f5c2c9f7a3901</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>72bdf0f9dbf93300a45c64d74896196b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">a782cde9c0a8006608f39abdd85c8395</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>1370</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>febdf0f9dbf93300a45c64d748961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value>// Set the variable 'answer' to '', 'approved' or 'rejected' to indicate the approval status for this approval.  When called, the following information is available:&#13;
+//&#13;
+//    counts.total = total number of users that are part of this approval&#13;
+//    counts.approved = # of users that approved so far&#13;
+//    counts.rejected = # of users that rejected so far&#13;
+//    counts.requested = # of users that are pending approval&#13;
+//    counts.not_requested = # of users that are not pending approval&#13;
+//    counts.not_required = # of users that approval is not required&#13;
+//&#13;
+</value>
+        <variable display_value="">02c86d780a0a0b261e6a356bc893d348</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>3ebdf0f9dbf93300a45c64d748961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">02ca01820a0a0b261cf923fb95f5e1d0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f2bdf0f9dbf93300a45c64d748961969</document_key>
+        <order>2050</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>76bdf0f9dbf93300a45c64d74896196d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value>answer = new KBWorkflow().getApprovers(current);</value>
+        <variable display_value="">c35e582f0a0a0ba96248a70985207e63</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Approval Knowledge Base Management">f2bdf0f9dbf93300a45c64d748961969</activity>
+        <condition>activity.result == 'approved'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Approved</name>
+        <order>1</order>
+        <short_description>Approval request was approved</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>76bdf0f9dbf93300a45c64d74896196e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Approval Knowledge Base Management">f2bdf0f9dbf93300a45c64d748961969</activity>
+        <condition>activity.result == 'skipped'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>delete</name>
+        <order>3</order>
+        <short_description>When Clicked on Delete or Update</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>f2bdf0f9dbf93300a45c64d74896196e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Approval Knowledge Base Management">f2bdf0f9dbf93300a45c64d748961969</activity>
+        <condition>activity.result == 'rejected' </condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Not Approved</name>
+        <order>2</order>
+        <short_description>Approval request was rejected or it was deleted</short_description>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>72bdf0f9dbf93300a45c64d74896196e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id/>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Draft">fabd70f9dbf93300a45c64d74896196d</stage>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>36bd70f9dbf93300a45c64d748961973</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="HHD Approval KB">62bd70f9dbf93300a45c64d74896196b</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=36bd70f9dbf93300a45c64d748961973"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">36bd70f9dbf93300a45c64d748961973</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>7ebd70f9dbf93300a45c64d748961973</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id/>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>f2bdf0f9dbf93300a45c64d748961966</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:25</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="HHD Approval KB">62bd70f9dbf93300a45c64d74896196b</workflow_version>
+        <x>1130</x>
+        <y>318</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=f2bdf0f9dbf93300a45c64d748961966"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Workflow">f1afb4010a0a0b2c00d8f55e2372c728</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id/>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Knowledge - Pblish Article</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:14</sys_created_on>
+        <sys_id>f6bd70f9dbf93300a45c64d74896196e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:37:35</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="HHD Approval KB">62bd70f9dbf93300a45c64d74896196b</workflow_version>
+        <x>1023</x>
+        <y>0</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=f6bd70f9dbf93300a45c64d74896196e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f6bd70f9dbf93300a45c64d74896196e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:14</sys_created_on>
+        <sys_id>32bd70f9dbf93300a45c64d74896196f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value>72bd70f9dbf93300a45c64d748961970</value>
+        <variable display_value="">f25501290a0a0b2c005133d3fe2841b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f6bd70f9dbf93300a45c64d74896196e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:14</sys_created_on>
+        <sys_id>32bd70f9dbf93300a45c64d74896196f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value>72bd70f9dbf93300a45c64d748961970</value>
+        <variable display_value="">f25501290a0a0b2c005133d3fe2841b3</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Knowledge - Pblish Article">f6bd70f9dbf93300a45c64d74896196e</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:14</sys_created_on>
+        <sys_id>7ebd70f9dbf93300a45c64d74896196f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:14</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Move to Draft</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Draft">fabd70f9dbf93300a45c64d74896196d</stage>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>76bdf0f9dbf93300a45c64d74896196f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:46</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="HHD Approval KB">62bd70f9dbf93300a45c64d74896196b</workflow_version>
+        <x>689</x>
+        <y>368</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=76bdf0f9dbf93300a45c64d74896196f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>76bdf0f9dbf93300a45c64d74896196f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>fabdf0f9dbf93300a45c64d74896196f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>76bdf0f9dbf93300a45c64d74896196f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>fabdf0f9dbf93300a45c64d74896196f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Move to Draft">76bdf0f9dbf93300a45c64d74896196f</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>72bdf0f9dbf93300a45c64d748961970</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Set Validity for 1 Year</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 06:00:13</sys_created_on>
+        <sys_id>06e2c1f9dbf93300a45c64d748961997</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 06:04:06</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="HHD Approval KB">62bd70f9dbf93300a45c64d74896196b</workflow_version>
+        <x>629</x>
+        <y>19</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=06e2c1f9dbf93300a45c64d748961997"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>06e2c1f9dbf93300a45c64d748961997</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 06:00:13</sys_created_on>
+        <sys_id>7d3341f9dbf93300a45c64d748961959</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 06:00:13</sys_updated_on>
+        <value>valid_to=javascript:gs.daysAgo(-365)^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>06e2c1f9dbf93300a45c64d748961997</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 06:00:13</sys_created_on>
+        <sys_id>7d3341f9dbf93300a45c64d748961959</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 06:00:13</sys_updated_on>
+        <value>valid_to=javascript:gs.daysAgo(-365)^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Set Validity for 1 Year">06e2c1f9dbf93300a45c64d748961997</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 06:00:13</sys_created_on>
+        <sys_id>823341f9dbf93300a45c64d74896195a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 06:00:13</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Branch">a246173ac0a8016400a47421cd41e42c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Validity Based on Catagory</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:38:43</sys_created_on>
+        <sys_id>b62e78f9dbf93300a45c64d748961999</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 06:02:48</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="HHD Approval KB">62bd70f9dbf93300a45c64d74896196b</workflow_version>
+        <x>382</x>
+        <y>119</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=b62e78f9dbf93300a45c64d748961999"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Validity Based on Catagory">b62e78f9dbf93300a45c64d748961999</activity>
+        <condition>current.kb_category.getDisplayValue()=='Policy'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>1 Year from Publishication Date</name>
+        <order>1</order>
+        <short_description>set one year for publication  date</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:55:06</sys_created_on>
+        <sys_id>0f8ef03ddbf93300a45c64d748961989</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:55:06</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Validity Based on Catagory">b62e78f9dbf93300a45c64d748961999</activity>
+        <condition>current.kb_category.getDisplayValue()!='Policy' &amp;&amp; current.kb_category.getDisplayValue()!='Support'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Default</name>
+        <order>3</order>
+        <short_description>Default</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:58:16</sys_created_on>
+        <sys_id>9f7241f9dbf93300a45c64d748961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:58:16</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Validity Based on Catagory">b62e78f9dbf93300a45c64d748961999</activity>
+        <condition>current.kb_category.getDisplayValue()=='Support'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Set validity for 6 month</name>
+        <order>2</order>
+        <short_description>Set validity for 6 month</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:56:48</sys_created_on>
+        <sys_id>923245fddbf93300a45c64d748961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:56:48</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Set validity for 6 month">923245fddbf93300a45c64d748961947</condition>
+        <from display_value="Validity Based on Catagory">b62e78f9dbf93300a45c64d748961999</from>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 06:02:43</sys_created_on>
+        <sys_id>12c385b9dbf93300a45c64d748961936</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 06:02:43</sys_updated_on>
+        <to display_value="6 Months Validity">299341f9dbf93300a45c64d748961980</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">fcc38131db3d3300a45c64d748961967</condition>
+        <from display_value="6 Months Validity">299341f9dbf93300a45c64d748961980</from>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 06:04:01</sys_created_on>
+        <sys_id>15148131db3d3300a45c64d748961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 06:04:01</sys_updated_on>
+        <to display_value="Knowledge - Pblish Article">f6bd70f9dbf93300a45c64d74896196e</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Default">9f7241f9dbf93300a45c64d748961984</condition>
+        <from display_value="Validity Based on Catagory">b62e78f9dbf93300a45c64d748961999</from>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 06:03:37</sys_created_on>
+        <sys_id>17f305f9dbf93300a45c64d74896197c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 06:03:37</sys_updated_on>
+        <to display_value="6 Months Validity">299341f9dbf93300a45c64d748961980</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="delete">f2bdf0f9dbf93300a45c64d74896196e</condition>
+        <from display_value="Approval Knowledge Base Management">f2bdf0f9dbf93300a45c64d748961969</from>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>32bdf0f9dbf93300a45c64d748961971</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <to display_value="Move to Draft">76bdf0f9dbf93300a45c64d74896196f</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">72bdf0f9dbf93300a45c64d748961970</condition>
+        <from display_value="Move to Draft">76bdf0f9dbf93300a45c64d74896196f</from>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>3abdf0f9dbf93300a45c64d748961971</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <to display_value="End">f2bdf0f9dbf93300a45c64d748961966</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">823341f9dbf93300a45c64d74896195a</condition>
+        <from display_value="Set Validity for 1 Year">06e2c1f9dbf93300a45c64d748961997</from>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 06:03:56</sys_created_on>
+        <sys_id>4814c931db3d3300a45c64d748961964</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 06:03:56</sys_updated_on>
+        <to display_value="Knowledge - Pblish Article">f6bd70f9dbf93300a45c64d74896196e</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">7ebd70f9dbf93300a45c64d748961973</condition>
+        <from display_value="Begin">36bd70f9dbf93300a45c64d748961973</from>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>76bdf0f9dbf93300a45c64d748961971</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <to display_value="Approval Knowledge Base Management">f2bdf0f9dbf93300a45c64d748961969</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Approved">76bdf0f9dbf93300a45c64d74896196e</condition>
+        <from display_value="Approval Knowledge Base Management">f2bdf0f9dbf93300a45c64d748961969</from>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>7ebdf0f9dbf93300a45c64d748961970</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:38:47</sys_updated_on>
+        <to display_value="Validity Based on Catagory">b62e78f9dbf93300a45c64d748961999</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Not Approved">72bdf0f9dbf93300a45c64d74896196e</condition>
+        <from display_value="Approval Knowledge Base Management">f2bdf0f9dbf93300a45c64d748961969</from>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>b2bdf0f9dbf93300a45c64d748961971</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <to display_value="Move to Draft">76bdf0f9dbf93300a45c64d74896196f</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="1 Year from Publishication Date">0f8ef03ddbf93300a45c64d748961989</condition>
+        <from display_value="Validity Based on Catagory">b62e78f9dbf93300a45c64d748961999</from>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 06:00:22</sys_created_on>
+        <sys_id>b7334dfddbf93300a45c64d74896195f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 06:00:22</sys_updated_on>
+        <to display_value="Set Validity for 1 Year">06e2c1f9dbf93300a45c64d748961997</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">7ebd70f9dbf93300a45c64d74896196f</condition>
+        <from display_value="Knowledge - Pblish Article">f6bd70f9dbf93300a45c64d74896196e</from>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>fabdf0f9dbf93300a45c64d748961971</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <to display_value="End">f2bdf0f9dbf93300a45c64d748961966</to>
+    </wf_transition>
+    <wf_workflow_instance action="INSERT_OR_UPDATE">
+        <activity display_value="Knowledge - Pblish Article">f6bd70f9dbf93300a45c64d74896196e</activity>
+        <return_map/>
+        <stage/>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:15</sys_created_on>
+        <sys_id>72bd70f9dbf93300a45c64d748961970</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:15</sys_updated_on>
+        <workflow display_value="Knowledge - Publish Knowledge">02be08a4eb5221007128a5fc5206fe12</workflow>
+        <workflow_version display_value="HHD Approval KB">62bd70f9dbf93300a45c64d74896196b</workflow_version>
+    </wf_workflow_instance>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>anandkumarpa</sys_created_by>
+        <sys_created_on>2019-06-03 05:36:14</sys_created_on>
+        <sys_id>a6bd70f9dbf93300a45c64d74896196b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>anandkumarpa</sys_updated_by>
+        <sys_updated_on>2019-06-03 05:36:14</sys_updated_on>
+        <workflow_version display_value="HHD Approval KB">62bd70f9dbf93300a45c64d74896196b</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=aebd70f9dbf93300a45c64d748961969^sys_id!=62bd70f9dbf93300a45c64d74896196b">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>
